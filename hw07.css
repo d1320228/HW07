@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/* ==========================================================
+   HW07 外部樣式表：css/hw07.css
+   說明：本檔案由 HW06 的樣式整理而成，供 HW07 外部樣式表練習使用。
+   更新日期：2026 年 11 月 4 日
+   ========================================================== */
+
+/* 全域通用的 box-sizing 設定 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    font-family: "Microsoft JhengHei", "PingFang TC", -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.85;
+    color: #2b3748;
+    background-color: #fdf4f5; /* 清新柔和的淺粉紅整頁底色 */
+}
+
+/* 頁首樣式 */
+header {
+    padding: 34px 36px;
+    background-color: #2b6cb0; /* 優雅的柔和藍色頁首 */
+    color: #fffdf8;
+    border-top: 6px solid #ed64a6; /* 亮眼淺粉紅裝飾線 */
+    border-radius: 6px;
+}
+
+h1 {
+    margin: 0 0 16px;
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+small {
+    font-size: 0.85em;
+    font-style: normal;
+}
+
+/* 導覽列樣式 */
+nav {
+    margin: 24px 0;
+    padding: 20px 24px;
+    background-color: #ebf8ff; /* 淺藍色導覽區背景 */
+    border: 1px solid #bee3f8;
+    border-radius: 6px;
+}
+
+nav h2 {
+    margin-top: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1.1rem;
+    color: #2b6cb0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 4px 6px 4px 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #fffdf8;
+    border: 1px solid #bee3f8;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+a {
+    color: #3182ce;
+    text-underline-offset: 4px;
+    overflow-wrap: anywhere;
+}
+
+a:hover {
+    color: #d53f8c; /* 滑鼠移入變粉紅色 */
+    text-decoration: underline;
+}
+
+/* 焦點提示（Focus Outline） */
+a:focus-visible, summary:focus-visible {
+    outline: 3px solid #ed64a6;
+    outline-offset: 4px;
+}
+
+/* 章節與補充資訊 */
+section, aside {
+    margin: 24px 0;
+    padding: 24px 28px;
+    background-color: #fffdf8;
+    border: 1px solid #fed7e2; /* 淡粉色外框線 */
+    border-radius: 6px;
+}
+
+/* 標題、段落與清單 */
+h2 {
+    margin: 0 0 18px;
+    padding-left: 12px;
+    border-left: 4px solid #3182ce; /* 淺藍色標題左側裝飾線 */
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #2b6cb0;
+}
+
+h3 {
+    margin: 22px 0 10px;
+    font-size: 1.1rem;
+    color: #3182ce;
+}
+
+p {
+    margin: 12px 0;
+}
+
+ul, ol {
+    padding-left: 1.6em;
+}
+
+li {
+    margin: 8px 0;
+}
+
+hr {
+    margin: 26px 0;
+    border: 0;
+    border-top: 1px solid #fed7e2;
+}
+
+/* 表格樣式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+    overflow-wrap: anywhere;
+}
+
+caption {
+    margin-bottom: 12px;
+    text-align: left;
+    font-weight: bold;
+    color: #2b6cb0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+    vertical-align: top;
+}
+
+thead {
+    background-color: #ebf8ff; /* 表頭使用淺藍底色 */
+}
+
+tbody th {
+    background-color: #fff5f7; /* 列表標題使用淺粉底色 */
+}
+
+/* 圖說與媒體元件樣式 */
+figure {
+    margin: 18px 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #718096;
+    font-size: 0.85em;
+}
+
+iframe {
+    display: block;
+    max-width: 100%;
+    border: 0;
+    border-radius: 4px;
+}
+
+.video-frame {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.map-frame {
+    width: 100%;
+    height: 380px;
+}
+
+/* ID 選擇器設定補充資訊區與頁尾 */
+#tips {
+    background-color: #fff5f5;
+    border-left: 5px solid #ed64a6;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #b83280;
+}
+
+footer {
+    margin-top: 32px;
+    padding: 20px 0;
+    border-top: 2px solid #3182ce;
+    color: #718096;
+    text-align: center;
+}
+
+
+/* ==========================================================
+   HW07 三處行內樣式遷移的對應類別（Class）
+   ========================================================== */
+
+/* 遷移一：副標題文字樣式（原 header 內的行內 style） */
+.subtitle-highlight {
+    font-size: 1.15em;
+    color: #fed7e2;
+    font-weight: 600;
+}
+
+/* 遷移二：地址區塊樣式（原 p 標籤的行內 style） */
+.address-box {
+    background-color: #ebf8ff;
+    padding: 10px 14px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* 遷移三：底部資料更新日期透明度與斜體微調（原 small 外層 p 的行內 style） */
+.footer-disclaimer {
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 0.9em;
+}
+
+
+/* ==========================================================
+   窄視窗 RWD 響應式設定
+   ========================================================== */
+@media (max-width: 600px) {
+    body {
+        padding: 16px 12px;
+        font-size: 16px;
+    }
+    header, nav, section, aside {
+        padding: 20px 16px;
+    }
+    h1 {
+        font-size: 1.65rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
